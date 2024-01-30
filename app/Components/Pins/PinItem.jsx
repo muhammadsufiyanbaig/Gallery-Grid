@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Image from 'next/image';
 import UserTag from '../UserTag';
@@ -11,22 +12,19 @@ function PinItem({ pin }) {
   };
 
   return (
-    <div className='grid grid-cols-1'>
-      <div
-        className='relative before:absolute before:h-full before:w-full before:rounded-3xl before:z-10 hover:before:bg-gray-600 before:opacity-50 cursor-pointer'
-        onClick={() => router.push('/pin/' + pin.id)}
-      >
+    <div className='max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden'>
+      <div onClick={() => router.push("/pin/" + pin.id)}>
         <Image
           src={pin.image}
           alt={pin.title}
           width={500}
           height={500}
-          className='rounded-3xl cursor-pointer relative z-0'
+          className='rounded-t-lg bg-gray-50 cursor-pointer'
         />
-      <div className='mt-2'>
-        <h2 className='font-bold text-[18px] mb-1 line-clamp-2'>{pin.title}</h2>
-        <UserTag user={user} />
       </div>
+      <div className='p-4'>
+        <h2 className='text-xl font-semibold text-gray-800'>{pin.title}</h2>
+        <UserTag user={user} />
       </div>
     </div>
   );
