@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import Header from "./Components/Header";
 import "./globals.css";
 import Provider from "./Provider";
-
+import TProvider from './Components/ThemeProvider';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,10 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+      <TProvider>
       <Provider>
           <Header/>
           {children}
       </Provider>
+      </TProvider>
         </body>
     </html>
   );

@@ -40,7 +40,7 @@ const router = useRouter();
 
   }
   return (
-    <div className='flex gap-2 md:gap-3 items-center'>
+    <div className='flex gap-2 md:gap-3 items-center bg-gray-50'>
       <Image onClick={() => router.push('/')} src={logo} alt={"logo"} width={50} height={50} className='hover:bg-gray-200 cursor-pointer p-2 rounded-full'/>
       <div className='flex'>
         <button 
@@ -50,9 +50,16 @@ const router = useRouter();
         onClick={()=>onCreateClick()}
         >Create</button>
       </div>
-      <div className='flex gap-3 p-2 items-center w-full bg-[#e9e9e9] rounded-3xl '>
+      <div className='flex gap-3 p-2 rounded-md m-2 items-center w-full bg-[#e9e9e9] '>
         <HiSearch className='text-gray-500 text-xl'/>
-        <input type="text" placeholder='Search' className='hidden md:flex text-gray-700 bg-transparent outline-none '/>
+        <input
+            id="search"
+            name="search"
+            type="search"
+            autoComplete="off"
+            placeholder="Search"
+            className="h-9 lg:w-[300px] bg-transparent outline-none"
+          />
       </div>
       <HiBell className='text-gray-500 text-[60px] md:text-[40px]'/>
       <HiChat className='text-gray-500 text-[60px] md:text-[40px]'/>

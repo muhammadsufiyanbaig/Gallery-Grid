@@ -8,11 +8,11 @@ function PinInfo({pinDetail}) {
     image:pinDetail.userImage
   }
   return (
-    <div>
+    <div className='space-y-2'>
       <h2 className='text-[30px] font-bold mb-10'>{pinDetail.title}</h2>
       <UserTag user={user} />
       <h2 className='mt-10'>{pinDetail.desc}</h2>
-      <button className="px-3 py-2 text-gray-50 bg-red-600 hover:bg-black rounded-3xl hover:text-gray-50"
+      <button className="px-3 py-2 text-gray-50 bg-red-700 hover:bg-black rounded-3xl hover:text-gray-50"
       onClick={()=>window.open(pinDetail.link)}>Visit</button>
     </div>
   )

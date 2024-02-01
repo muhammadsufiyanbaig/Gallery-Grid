@@ -1,16 +1,29 @@
 import Image from 'next/image';
 import React from 'react'
 import { signOut,useSession } from "next-auth/react"
-import { useRouter } from 'next/navigation';
-import { RWebShare } from "react-web-share";
+import { useRouter, usePathname, useSearchParams } from 'next/navigation';
+
 function UserInfo({userInfo}) {
     console.log(userInfo);
+    const pathname=usePathname();
+    console.log(pathname);
+    // const modal = searchParams.get();
+    // console.log(modal);
     const router=useRouter();
     const {data:session}=useSession()
     const onLogoutClick=()=>{
       signOut();
       router.push("/")
     }
+    const handleShare = () =>{
+      // const userURL = `https://picturegalleryvercel.vercel.app/`+pathname
+      // console.log(userURL);
+      return(
+        <div>
+        </div>
+      )
+    }
+    
   return (
     <div className='flex flex-col items-center'>
         <Image src={userInfo.userImage}
