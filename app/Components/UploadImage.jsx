@@ -5,7 +5,7 @@ function UploadImage({setFile}) {
 
 
   return (
-    <div className='h-[450px] bg-[#e9e9e9]
+    <div className='h-[450px] bg-[#e9e9e9] dark:bg-gray-900
     rounded-lg'>
         
         <label className='m-5 flex flex-col justify-center items-center
@@ -14,7 +14,7 @@ function UploadImage({setFile}) {
            
           {!selectedFile?
           <div className='flex items-center flex-col'>
-           <HiArrowUpCircle className='text-[22px]'/>   
+           <HiArrowUpCircle className='text-[22px] text-gray-500'/>   
             <h2 className=' font-semibold'>Click to Upload</h2>
             </div>
             :null}

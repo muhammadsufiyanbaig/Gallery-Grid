@@ -15,14 +15,7 @@ function UserInfo({userInfo}) {
       signOut();
       router.push("/")
     }
-    const handleShare = () =>{
-      // const userURL = `https://picturegalleryvercel.vercel.app/`+pathname
-      // console.log(userURL);
-      return(
-        <div>
-        </div>
-      )
-    }
+    
     
   return (
     <div className='flex flex-col items-center'>
@@ -35,10 +28,9 @@ function UserInfo({userInfo}) {
         <h2 className='text-[30px]
         font-semibold'>{userInfo.userName}</h2>
         <h2 className='text-gray-400'>{userInfo.email}</h2>
-        <div className='flex gap-4'>
-        <button className='bg-gray-200
-p-2 px-3 font-semibold mt-5 rounded-full'>Share</button>
-        {session?.user.email== userInfo.email? <button className='bg-gray-200
+        <div className='flex gap-4 mb-4'>
+
+        {session?.user.email== userInfo.email? <button className='bg-blue-300 hover:bg-blue-400
          p-2 px-3 font-semibold mt-5 rounded-full'
          onClick={()=>onLogoutClick()}>Logout</button>:null}
       </div>

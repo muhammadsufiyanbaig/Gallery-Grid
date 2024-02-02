@@ -12,18 +12,18 @@ function PinItem({ pin }) {
   };
 
   return (
-    <div className='max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden'>
+    <div className='max-w-md mx-auto bg-white dark:bg-gray-950 shadow-lg rounded-lg overflow-hidden'>
       <div onClick={() => router.push("/pin/" + pin.id)}>
         <Image
           src={pin.image}
           alt={pin.title}
           width={500}
           height={500}
-          className='rounded-t-lg bg-gray-50 cursor-pointer'
+          className='rounded-t-lg bg-gray-50 dark:bg-gray-900 cursor-pointer'
         />
       </div>
       <div className='p-4'>
-        <h2 className='text-xl font-semibold text-gray-800'>{pin.title}</h2>
+        <h2 className='text-xl font-semibold dark:text-white text-gray-800'>{pin.title}</h2>
         <UserTag user={user} />
       </div>
     </div>
