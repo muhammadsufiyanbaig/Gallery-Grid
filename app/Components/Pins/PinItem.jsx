@@ -11,7 +11,7 @@ function PinItem({ pin }) {
   };
 
   return (
-    <div className='group relative mb-2 block h-80 overflow-hidden rounded-lg bg-gray-100 lg:mb-3'>
+    <div className='group relative mb-2 block max-h-80 overflow-hidden rounded-lg bg-gray-100 lg:mb-3'>
       <div onClick={() => router.push("/pin/" + pin.id)}>
         <Image
           src={pin.image}
@@ -21,7 +21,7 @@ function PinItem({ pin }) {
           layout="responsive"
           className='h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'
         />
-        <span className='absolute left-0 top-0 rounded-br-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white hover:text-gray-500'>{pin.title}</span>
+        <span className='absolute left-0 bottom-0 rounded-br-lg px-3 py-1.5 text-sm uppercase tracking-wider text-white hover:text-gray-500'>{pin.title}</span>
       </div>
     </div>
   );
