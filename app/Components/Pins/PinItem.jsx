@@ -21,6 +21,7 @@ function PinItem({ pin }) {
           layout="responsive"
           className=' max-h-96 rounded-t-lg bg-gray-50 dark:bg-gray-900 cursor-pointer'
         />
+        <span className='text-lg font-semibold dark:text-white text-gray-800'>{pin.title}</span>
       </div>
     </div>
   );
