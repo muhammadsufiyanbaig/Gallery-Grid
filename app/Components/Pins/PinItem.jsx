@@ -19,7 +19,7 @@ function PinItem({ pin }) {
           width={500}
           height={500}
           layout="responsive"
-          className='h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'
+          className='h-full w-full object-cover object-center transition duration-200 cursor-pointer group-hover:scale-110'
         />
         <span className='absolute left-0 bottom-0 rounded-br-lg px-3 py-1.5 text-sm uppercase tracking-wider text-white hover:text-gray-500'>{pin.title}</span>
       </div>
