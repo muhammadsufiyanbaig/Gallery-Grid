@@ -33,7 +33,7 @@ function PinDetail({ params }) {
   }
 
   return (
-    <div className='bg-white h-full dark:bg-gray-950 p-3 md:p-12 rounded-2xl md:px-24 lg:px-36'>
+    <div className='bg-white h-full dark:bg-black p-3 md:p-12 rounded-2xl md:px-24 lg:px-36'>
       <HiArrowSmallLeft
         className='text-[40px] font-bold ml-[-30px] cursor-pointer hover:bg-blue-300 rounded-lg'
         onClick={() => router.back()}
