@@ -19,6 +19,7 @@ function PinItem({ pin }) {
           alt={pin.title}
           width={500}
           height={500}
+          layout="responsive"
           className='rounded-t-lg bg-gray-50 dark:bg-gray-900 cursor-pointer'
         />
       </div>
