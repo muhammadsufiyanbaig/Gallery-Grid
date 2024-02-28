@@ -22,9 +22,6 @@ function PinItem({ pin }) {
           className=' max-h-96 rounded-t-lg bg-gray-50 dark:bg-gray-900 cursor-pointer'
         />
       </div>
-      <div className='p-4'>
-        <h2 className='text-xl font-semibold dark:text-white text-gray-800'>{pin.title}</h2>
-      </div>
     </div>
   );
 }
