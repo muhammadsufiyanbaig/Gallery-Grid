@@ -11,7 +11,7 @@ function PinItem({ pin }) {
   };
 
   return (
-    <div className='group relative mb-2 block max-h-80 overflow-hidden rounded-lg bg-gray-100 lg:mb-3'>
+    <div className='group relative mb-2 block  max-h-80 overflow-hidden rounded-lg bg-gray-100 lg:mb-3'>
       <div onClick={() => router.push("/pin/" + pin.id)}>
         <Image
           src={pin.image}
