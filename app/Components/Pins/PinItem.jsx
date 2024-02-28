@@ -20,7 +20,7 @@ function PinItem({ pin }) {
           width={500}
           height={500}
           layout="responsive"
-          className=' max-h-40 rounded-t-lg bg-gray-50 dark:bg-gray-900 cursor-pointer'
+          className=' max-h-60 rounded-t-lg bg-gray-50 dark:bg-gray-900 cursor-pointer'
         />
       </div>
       <div className='p-4'>
