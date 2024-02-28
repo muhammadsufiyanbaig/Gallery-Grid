@@ -11,7 +11,7 @@ function PinItem({ pin }) {
   };
 
   return (
-    <div className='max-w-md mx-auto bg-white dark:bg-gray-950 shadow-lg rounded-lg overflow-hidden'>
+    <div className='max-w-md mx-auto  shadow-lg rounded-lg overflow-hidden'>
       <div onClick={() => router.push("/pin/" + pin.id)}>
         <Image
           src={pin.image}
