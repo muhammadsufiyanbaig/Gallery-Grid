@@ -1,7 +1,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import UserTag from '../UserTag';
 import { useRouter } from 'next/navigation';
 
 function PinItem({ pin }) {
@@ -25,7 +24,6 @@ function PinItem({ pin }) {
       </div>
       <div className='p-4'>
         <h2 className='text-xl font-semibold dark:text-white text-gray-800'>{pin.title}</h2>
-        <UserTag user={user} />
       </div>
     </div>
   );
